@@ -24,7 +24,7 @@ const run = async () => {
   if(files.directoryExists(cloneRepo.name)) {
     // TODO: exist File
   }else {
-    shell.exec(`git clone ${url}`);
+    shell.exec(`git clone ${cloneRepo.url}`);
   }
 };
 
